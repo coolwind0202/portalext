@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "portalext",
+    "version": "1.0",
+    "description": "Portalをextendします。",
+    "content_scripts": [
+        {
+            "matches": ["https://portal.mc.chitose.ac.jp/portal2/*"],
+            "js": ["content_script.js"]
+        }
+    ]
+}
