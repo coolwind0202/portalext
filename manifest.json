@@ -3,10 +3,16 @@
     "name": "portalext",
     "version": "1.0",
     "description": "Portalをextendします。",
+    "action": {
+        "default_title": "Hello"
+    },
     "content_scripts": [
         {
             "matches": ["https://portal.mc.chitose.ac.jp/portal2/*"],
             "js": ["content_script.js"]
         }
-    ]
+    ],
+    "background": {
+        "service_worker": "service_worker.js"
+    }
 }
