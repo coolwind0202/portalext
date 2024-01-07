@@ -8,8 +8,12 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://portal.mc.chitose.ac.jp/portal2/*"],
-            "js": ["content_script.js"]
+            "matches": [
+                "https://portal.mc.chitose.ac.jp/portal2/MyPage*"
+            ],
+            "js": [
+                "features/lecture/toppage.content.js"
+            ]
         }
     ],
     "background": {
