@@ -14,6 +14,18 @@
             "js": [
                 "features/lecture/toppage.content.js"
             ]
+        },
+        {
+            "matches": [
+                "https://portal.mc.chitose.ac.jp/portal2/*"
+            ],
+            "js": [
+                "features/helper/page_detect.content.js",
+                "features/textarea_validation/lecture.content.js"
+            ],
+            "css": [
+                "features/textarea_validation/lecture.content.css"
+            ]
         }
     ],
     "background": {
