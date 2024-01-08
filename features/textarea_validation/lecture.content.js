@@ -1,6 +1,7 @@
-const getLengthAsCRLF = (text) => {
-  const newlineCount = [...text.matchAll("\n")].length;
-  const lengthAsCRLF = text.length + newlineCount;
+const getLengthAsCRLF = (rawText) => {
+  const trimmedText = rawText.trim();
+  const newlineCount = [...trimmedText.matchAll("\n")].length;
+  const lengthAsCRLF = trimmedText.length + newlineCount;
   return lengthAsCRLF;
 }
 
