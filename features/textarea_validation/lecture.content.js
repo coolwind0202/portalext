@@ -11,6 +11,7 @@ const main = () => {
   textareas.forEach(textarea => {
     const maxLength = textarea.maxLength;
     const currentLengthBox = textarea.parentElement.querySelector("span:nth-of-type(1)");
+    const submitButton = textarea.form.querySelector('button[type="submit"]');
 
     /* Set initial current length */
     currentLengthBox.textContent = getLengthAsCRLF(textarea.value);
@@ -26,6 +27,13 @@ const main = () => {
       textarea.setCustomValidity(validity);
 
       currentLengthBox.textContent = lengthAsCRLF;
+    });
+
+    submitButton.addEventListener("click", () => {
+      /*
+        TODO: if input value is invalid, this handler should prevent submit process.
+      */
+      textarea.reportValidity();
     });
   });
 }
