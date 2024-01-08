@@ -12,7 +12,7 @@
                 "https://portal.mc.chitose.ac.jp/portal2/MyPage*"
             ],
             "js": [
-                "features/lecture/toppage.content.js"
+                "features/timetable_link/toppage.content.js"
             ]
         },
         {
