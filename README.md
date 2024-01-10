@@ -33,6 +33,15 @@ This extension trims whitespaces before counts the length.
 
 Source: `features/textarea_validation/lecture.content.js`
 
+### Clickable Current Tab
+By default, you can't click current tab.
+Current tab is represented as `a` element which has an empty href.
+
+This extension attaches alternative URL to href of the `a` element.
+It also fills the current tab button by other color to make distinguishable the button. 
+
+Source: `features/clickable_current_tab/all.content.js`
+
 ## Usage
 
 1. Clone or download as zip file this repository.
