@@ -26,6 +26,17 @@
             "css": [
                 "features/textarea_validation/lecture.content.css"
             ]
+        },
+        {
+            "matches": [
+                "https://portal.mc.chitose.ac.jp/portal2/*"
+            ],
+            "js": [
+                "features/clickable_current_tab/all.content.js"
+            ],
+            "css": [
+                "features/clickable_current_tab/all.content.css"
+            ]
         }
     ],
     "background": {

@@ -1,0 +1,3 @@
+.mainMenu>.tabMenu>li[data-was-empty] {
+  filter: hue-rotate(45deg);
+}
