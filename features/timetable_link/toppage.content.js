@@ -1,4 +1,4 @@
-const getLectureURL = (day, hour) => `${document.URL}-2.IBehaviorListener.0-timetablePanel-content-timetableAxisListView-${hour}-timetableBeanListList-${day}-course-0-lectureLink`;
+const getLectureURL = (day, hour) => `${document.URL}-IBehaviorListener.0-timetablePanel-content-timetableAxisListView-${hour}-timetableBeanListList-${day}-course-0-lectureLink`;
 
 const attachHrefToTds = () => {
   const rows = document.querySelectorAll("table > tbody > tr");
