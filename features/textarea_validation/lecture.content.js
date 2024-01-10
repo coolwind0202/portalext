@@ -5,7 +5,7 @@ const getLengthAsCRLF = (rawText) => {
   return lengthAsCRLF;
 }
 
-const main = () => {
+const main_textarea_validation = () => {
   const textareas = document.querySelectorAll("textarea");
 
   textareas.forEach(textarea => {
@@ -38,4 +38,4 @@ const main = () => {
   });
 }
 
-if (isLecturePage()) main();
+if (isLecturePage()) main_textarea_validation();
