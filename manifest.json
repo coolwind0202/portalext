@@ -37,9 +37,26 @@
             "css": [
                 "features/clickable_current_tab/all.content.css"
             ]
+        },
+        {
+            "matches": [
+                "https://solomon.mc.chitose.ac.jp/wbt/*"
+            ],
+            "js": [
+                "features/helper/cbt_page_detect.content.js",
+                "features/solomon_reanswer_feedback_text/cbt_question.content.js"
+            ],
+            "all_frames": true
         }
     ],
     "background": {
-        "service_worker": "service_worker.js"
-    }
+        "service_worker": "features/solomon_reanswer_feedback_text/cbt_question.background.js"
+    },
+    "permissions": [
+        "storage",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "*://solomon.mc.chitose.ac.jp/wbt/*"
+    ]
 }
