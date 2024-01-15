@@ -24,7 +24,7 @@ const main_solomon_reanswer_feedback_text = () => {
     const isConfirmMessage = request.type == "portalext_answer_confirm"
     if (!isConfirmMessage) return;
 
-    const japaneseLabel = convertConfirmStatusToJapanese(request.completed);
+    const japaneseLabel = convertConfirmStatusToJapanese(request.isCompleted);
     const answerCompletedLabel = document.createElement("p");
     answerCompletedLabel.textContent = japaneseLabel;
     answerConfirmButtonContainer.appendChild(answerCompletedLabel);
@@ -32,4 +32,3 @@ const main_solomon_reanswer_feedback_text = () => {
 }
 
 if (isExamPage()) main_solomon_reanswer_feedback_text();
-console.log(isExamPage())

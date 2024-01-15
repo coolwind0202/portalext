@@ -40,7 +40,8 @@
         },
         {
             "matches": [
-                "https://solomon.mc.chitose.ac.jp/wbt/*"
+                "https://solomon.mc.chitose.ac.jp/wbt/*",
+                "http://localhost:3000/*"
             ],
             "js": [
                 "features/helper/cbt_page_detect.content.js",
@@ -57,6 +58,7 @@
         "webRequest"
     ],
     "host_permissions": [
-        "*://solomon.mc.chitose.ac.jp/wbt/*"
+        "*://solomon.mc.chitose.ac.jp/wbt/*",
+        "http://localhost:3000/*"
     ]
 }
