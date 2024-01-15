@@ -53,6 +53,9 @@ const processResponse = async (responseDetail) => {
 chrome.webRequest.onResponseStarted.addListener((responseDetail) => {
   processResponse(responseDetail);
 }, {
-  urls: ["https://solomon.mc.chitose.ac.jp/wbt/*", "http://localhost:3000/*"],
+  urls: [
+    "https://solomon.mc.chitose.ac.jp/wbt/*"
+    /*, "http://localhost:3000/*"*/
+  ],
   types: ["xmlhttprequest"]
 });
