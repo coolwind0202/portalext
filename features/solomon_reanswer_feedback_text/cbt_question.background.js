@@ -33,8 +33,6 @@ const processResponse = async (responseDetail) => {
   if (!currentWatchingActionDict) return;
 
   for (const tabIdString in currentWatchingActionDict) {
-    // tabId
-
     const tabId = Number.parseInt(tabIdString);
     const formActionTarget = currentWatchingActionDict[tabId];
     if (formActionTarget != responseDetail.url) continue;
