@@ -42,6 +42,14 @@ It also fills the current tab button by other color to make distinguishable the 
 
 Source: `features/clickable_current_tab/all.content.js`
 
+
+### Solomon reanswer graphical feedback
+By default, when you modify answer in Solomon answer, Solomon doesn't any graphical response.
+
+This extension displays graphically whether requests of form submit has succeeded.
+
+Source: `features/solomon_reanswer_feedback_text/cbt_question.content.js`
+
 ## Usage
 
 1. Clone or download as zip file this repository.
