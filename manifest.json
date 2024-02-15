@@ -22,20 +22,11 @@
             "js": [
                 "features/helper/page_detect.content.js",
                 "features/textarea_validation/lecture.content.js",
-                "features/lookback_with_goals/lookback.content.js"
-            ],
-            "css": [
-                "features/textarea_validation/lecture.content.css"
-            ]
-        },
-        {
-            "matches": [
-                "https://portal.mc.chitose.ac.jp/portal2/*"
-            ],
-            "js": [
+                "features/lookback_with_goals/lookback.content.js",
                 "features/clickable_current_tab/all.content.js"
             ],
             "css": [
+                "features/textarea_validation/lecture.content.css",
                 "features/clickable_current_tab/all.content.css"
             ]
         },
